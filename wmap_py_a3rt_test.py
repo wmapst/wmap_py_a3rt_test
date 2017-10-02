@@ -6,7 +6,7 @@ if __name__ == '__main__':
     API_URL = "https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk"
     post_data = {
         "apikey" : "XXXXXXXXXXXXXXXXXXXXXXXXXX",
-        "query" : "Ç±ÇÒÇŒÇÒÇÌ",
+        "query" : "„Åì„Çì„Å∞„Çì„Çè",
                 }
 
     encoded_post_data = urllib.parse.urlencode(post_data).encode(encoding='utf-8')
@@ -17,3 +17,4 @@ if __name__ == '__main__':
             page_text = page_text + line.decode('utf-8')
     data = json.loads(page_text)
     print(data["results"])
+
